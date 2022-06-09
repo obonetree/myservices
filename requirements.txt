@@ -2,9 +2,6 @@ fastapi
 gunicorn
 uvicorn
 numpy
-scikit-learn
-scipy
-sklearn
 pandas
 beautifulsoup4
 requests
