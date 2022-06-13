@@ -140,7 +140,7 @@ async def random_movie(category):
     'action':['Black Adam','Spider-Man: Quarantined','Ghostbusters: Afterlife','Eternals','Dune'],
     'comedy':['Encanto','Red Notice','The Addams','Werewolves Within','Bad Trip'],
     'crime':['7 Prisoners','Survive the Game','Stillwater','Spiral','The Last Stand']}
-    movie = random.choice(list(lst_movie[category]))
+    movie = random.choice(lst_movie[category])
     return movie[0]
 
 
