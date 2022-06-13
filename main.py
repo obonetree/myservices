@@ -135,7 +135,11 @@ def google_search(text):
 
 @app.get("/random_movie")
 async def random_movie(category):
-    lst_movie = {'sci-fi':['a','b','c'], 'action':['d','e','f'], 'comedy':['g','h','i']}
+    lst_movie = {
+    'adventure':['Free Guy','Jungle Cruise','The Tomorrow War','Cruella','Mortal Kombat'],
+    'action':['Black Adam','Spider-Man: Quarantined','Ghostbusters: Afterlife','Eternals','Dune'],
+    'comedy':['Encanto','Red Notice','The Addams','Werewolves Within','Bad Trip'],
+    'crime':['7 Prisoners','Survive the Game','Stillwater','Spiral','The Last Stand']}
     movie = random.choice(list(lst_movie[category]))
     return movie[0]
 
