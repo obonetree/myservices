@@ -9,6 +9,7 @@ import math
 import requests
 from bs4 import BeautifulSoup
 from fastapi.responses import PlainTextResponse
+import random
 
 app = FastAPI()
 
@@ -132,7 +133,11 @@ def google_search(text):
     
     return(result)
 
-
+@app.get("/random_movie")
+async def random_movie(category):
+    lst_movie = {'sci-fi':['a','b','c'], 'action':['d','e','f'], 'comedy':['g','h','i']}
+    movie = random.choice(list(lst_movie[category]))
+    return movie[0]
 
 
 if __name__ == '__main__':
