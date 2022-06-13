@@ -139,7 +139,9 @@ async def random_movie(category: str = 'adventure/action/comedy/crime',):
     'adventure':['Free Guy','Jungle Cruise','The Tomorrow War','Cruella','Mortal Kombat'],
     'action':['Black Adam','Spider-Man: Quarantined','Ghostbusters: Afterlife','Eternals','Dune'],
     'comedy':['Encanto','Red Notice','The Addams','Werewolves Within','Bad Trip'],
-    'crime':['7 Prisoners','Survive the Game','Stillwater','Spiral','The Last Stand']}
+    'crime':['7 Prisoners','Survive the Game','Stillwater','Spiral','The Last Stand'],
+    'horror':['Resident Evil','Halloween Kills','Don\'t Breathe 2','A Quiet Place Part II','The Conjuring'],
+    'thriller':['Apex','Paranormal Activity','The Medium','Demonic','Deep']}
     movie = random.choice(lst_movie[category])
     return {'หนังที่สุ่มได้': movie}
 
